@@ -1,0 +1,3 @@
+CREATE SCHEMA [Eligibility]
+AUTHORIZATION [BPSIntranet]
+GO
