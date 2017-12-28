@@ -1,0 +1,3 @@
+CREATE SCHEMA [Transportation]
+AUTHORIZATION [BPSIntranet]
+GO
