@@ -1,0 +1,3 @@
+CREATE SCHEMA [Discover]
+AUTHORIZATION [BPSIntranet]
+GO
