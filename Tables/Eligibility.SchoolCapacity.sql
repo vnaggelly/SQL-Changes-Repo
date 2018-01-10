@@ -4,7 +4,7 @@ CREATE TABLE [Eligibility].[SchoolCapacity]
 [scaSchId] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 [scaSCA_OID] [nchar] (14) COLLATE SQL_Latin1_General_CP1_CS_AS NULL,
 [scaLastUpdated] [datetime] NOT NULL CONSTRAINT [DF_SchoolCapacity_scaLastUpdated] DEFAULT (getdate()),
-[scaGradeLevel] [char] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[scaGradeLevel] [char] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 [scaProgramId] [char] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 [scaYearContext] [char] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 [scaAssignLimit] [int] NOT NULL CONSTRAINT [DF__SchoolCap__scaAs__49C4C20E] DEFAULT ((0)),
