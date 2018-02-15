@@ -11,7 +11,8 @@ CREATE TABLE [Eligibility].[SchoolCapacity]
 [scaActualTotal] [int] NOT NULL CONSTRAINT [DF__SchoolCap__scaAc__4AB8E647] DEFAULT ((0)),
 [scaPendingTotal] [int] NOT NULL CONSTRAINT [DF__SchoolCap__scaPe__4BAD0A80] DEFAULT ((0)),
 [scaWaitlistTotal] [int] NOT NULL CONSTRAINT [DF__SchoolCap__scaWa__4CA12EB9] DEFAULT ((0)),
-[scaIsSpecialAdmission] [bit] NOT NULL CONSTRAINT [DF_SchoolCapacity_scaIsSpecialAdmission] DEFAULT ((0))
+[scaIsSpecialAdmission] [bit] NOT NULL CONSTRAINT [DF_SchoolCapacity_scaIsSpecialAdmission] DEFAULT ((0)),
+[scaIdPathway] [int] NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [Eligibility].[SchoolCapacity] ADD CONSTRAINT [PK_BPS.SchoolCapacity] PRIMARY KEY CLUSTERED  ([scaId]) ON [PRIMARY]
